@@ -1,6 +1,6 @@
-package edu.ufl.cise.cnt5106c.messages;
 
-import java.util.BitSet;
+
+import java.util.*;
 
 
 public class Bitfield extends Messages {
@@ -10,12 +10,5 @@ public class Bitfield extends Messages {
     }
 
 
-    // to be looked
-    public Bitfield (BitSet bitset) {
-        super ("Bitfield", bitset.toByteArray());
-    }
-// to be looked
-    public BitSet getBitSet() {
-        return BitSet.valueOf (payLoad);
-    }
+
 }
