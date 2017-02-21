@@ -12,15 +12,15 @@ public class StartPeer
 	        Collection<Peer> ConnectionList = new ArrayList<>();
 	        try 
 	        {
-	            CommonProperties = CommonProperties.read ();
+	            CommonProperties = Common_cnf.read ();
 	            peerList.read ();
 	            Iterator<Peer> PeerIterator = ConnectionList.iterator();
 	    		while (PeerIterator.hasNext()) 
 	    		{
 	    			Peer p = PeerIterator.next();
-	    			if(pid == p.getid)
+	    			if(pid == p.getid())
 	    			{
-	    				peer.address = p.getaddr();
+	    				peer.address = p.getAddr();
 	                    peer.port = p.getPort();
 	                    peer.hasFile = p.hasFile();
 	                    break;
@@ -33,11 +33,10 @@ public class StartPeer
 	        }
 	        catch (Exception e) { }
 
-	        Process startpeer = new Process (pid, peer.address, peer.port, peer.hasFile, peerList.getpeerList(), CommonProperties);
-	        //startpeer.init();
+	        Process startpeer = new Process (peer, peerList.getpeerList(), CommonProperties);
 	        Thread t = new Thread (startpeer);
 	        t.setName (""+pid);
 	        t.start();
-	        startpeer.connectToPeers (ConnectionList);
+	        startpeer.PeersConnection (ConnectionList);
 	    }
 }
