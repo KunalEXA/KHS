@@ -1,5 +1,3 @@
-package edu.ufl.cise.cnt5106c.messages;
-
 
 public class Have extends Messages {
 
@@ -8,7 +6,5 @@ public class Have extends Messages {
         super ("Have", pieceIndex);
     }
 
-   // public Have (int pieceIdx) {
-      //  this (getPieceIndexBytes (pieceIdx));
-    }
+      }
 
