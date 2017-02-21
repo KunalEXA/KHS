@@ -68,4 +68,14 @@ public class Peer {
     {
         return this.hasPieces;
     }
+    
+    public void setPort(int port)
+    {
+        this.port = port;
+    }
+    
+    public void getPort()
+    {
+        return this.port;
+    }
 }
