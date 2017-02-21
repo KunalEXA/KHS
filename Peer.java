@@ -19,12 +19,12 @@ public class Peer {
     public BitSet hasPieces;
     public AtomicBoolean interested;
     
-    public Peer(int id, int port, boolean hasFile, String add)
+    public Peer(int id, int port, boolean hasFile, String addr)
     {
         this.id = id;
         this.port = port;
         this.hasFile = hasFile;
-        this.addr = add;
+        this.addr = addr;
     }
     
     public void setId(int peerId)
