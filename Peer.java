@@ -15,7 +15,7 @@ public class Peer {
     public int id;
     public boolean hasFile;
     public int port;
-    public String add;
+    public String addr;
     public BitSet hasPieces;
     public AtomicBoolean interested;
     
@@ -24,12 +24,12 @@ public class Peer {
         this.id = id;
         this.port = port;
         this.hasFile = hasFile;
-        this.add = add;
+        this.addr = add;
     }
     
     public void setId(int peerId)
     {
-        this.id = peerId;
+        this(peerId, 6008, false, "localhost");
     }
     
     public int getId()
@@ -47,14 +47,14 @@ public class Peer {
         return interested.get();
     }
     
-    public void setAdd(String address)
+    public void setAddr(String address)
     {
-        this.add = address;
+        this.addr = address;
     }
     
-    public String getAdd()
+    public String getAddr()
     {
-        return this.add;
+        return this.addr;
     }
     
     
