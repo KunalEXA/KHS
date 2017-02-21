@@ -9,7 +9,7 @@ public class StartPeer
 	        Peer peer = new Peer(pid);
 	        Properties CommonProperties = null;
 	        peerList peerList = new peerList();
-	        Collection<Peer> ConnectionList = new ArrayList<>();
+	        List<Peer> ConnectionList = new ArrayList<>();
 	        try 
 	        {
 	            CommonProperties = Common_cnf.read ();
