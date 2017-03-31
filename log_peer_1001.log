@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-03-29T22:03:35</date>
+  <millis>1490839415391</millis>
+  <sequence>0</sequence>
+  <logger>BitTorrent</logger>
+  <level>INFO</level>
+  <class>Peer_Related.peerprocess</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>First Log</message>
+</record>
+</log>
