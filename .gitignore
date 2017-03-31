@@ -2,3 +2,5 @@ Common.cfg
 PeerInfo.cfg
 PeerInfonew.cfg
 BitTorrent.iml
+nbproject/
+idea/
